@@ -1,0 +1,16 @@
+{
+  "name": "Untitled GraphQL Schema",
+  "schemaPath": "schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "GitHub": {
+        "url": "https://api.github.com/graphql",
+        "headers": {
+          "Authorization": "Bearer 872a9892014177577e691a10c75f0c3078ecbe0e",
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": false
+      }
+    }
+  }
+}

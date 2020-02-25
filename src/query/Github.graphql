@@ -1,0 +1,30 @@
+query {
+    user(login: "knightzmc") {
+        pinnedItems(first: 10, types: [REPOSITORY]) {
+            nodes{
+                ... on Repository{
+                    name
+                    url
+                    description
+                    stargazers {
+                        totalCount
+                    }
+                    forkCount
+                    primaryLanguage {
+                        name
+                        color
+                    }
+                    languages(first: 5) {
+                        totalSize
+                        edges {
+                            node {
+                                name
+                            }
+                            size
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
