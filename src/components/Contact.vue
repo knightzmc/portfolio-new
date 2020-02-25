@@ -12,10 +12,8 @@
 
         <p>Here are my links:</p>
 
-<!--        <font-awesome-icon icon="github"></font-awesome-icon>-->
         <a href="https://github.com/knightzmc">GitHub: knightzmc</a>
         <br>
-<!--        <font-awesome-icon :icon="['fab','discord']"></font-awesome-icon>-->
         <a>Discord: Brister Mitten#1024</a>
 
     </div>

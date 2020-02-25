@@ -12,13 +12,13 @@
                 {{error}}
             </h1>
 
-            <b-card-group deck v-if="data" style="justify-content: center">
-                <b-card :title="repo.name"
+            <b-card-group deck style="justify-content: center" v-if="data">
+                <b-card :key="repo.name"
+                        :title="repo.name"
                         :url="repo.url"
                         style="min-width: 20%; max-width: 30%; margin-top: 2rem;"
                         v-card-hover
-                        v-for="repo in data.user.pinnedItems.nodes"
-                        :key="repo.name">
+                        v-for="repo in data.user.pinnedItems.nodes">
                     <b-card-text>
                         {{repo.description}}
                     </b-card-text>
@@ -26,7 +26,15 @@
                         <div class="row">
                             <div class="col">
                                 {{repo.forkCount}}
-                                <font-awesome-icon icon="code-branch"/>
+                                <svg height="5mm" viewBox="0 0 10 16" width="5mm"
+                                     xmlns="http://www.w3.org/2000/svg">
+
+                                    <title>Forks</title>
+                                    <path
+                                            d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
+                                            fill-rule="evenodd"
+                                            style="fill:#586069"></path>
+                                </svg>
                             </div>
                             <div class="col">
                                 <a :style="{'color': repo.primaryLanguage.color}">
@@ -34,7 +42,14 @@
                             </div>
                             <div class="col">
                                 {{repo.stargazers.totalCount}}
-                                <font-awesome-icon icon="star"/>
+                                <svg height="5mm" viewBox="0 0 14 16" width="5mm"
+                                     xmlns="http://www.w3.org/2000/svg">
+
+                                    <title>Stars</title>
+                                    <path d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"
+                                          fill-rule="evenodd"
+                                          style="fill:#586069"></path>
+                                </svg>
                             </div>
                         </div>
                     </template>

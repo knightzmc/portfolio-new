@@ -1,6 +1,6 @@
 query {
     user(login: "knightzmc") {
-        pinnedItems(first: 10, types: [REPOSITORY]) {
+        pinnedItems(first: 6, types: [REPOSITORY]) {
             nodes{
                 ... on Repository{
                     name
@@ -14,15 +14,15 @@ query {
                         name
                         color
                     }
-                    languages(first: 5) {
-                        totalSize
-                        edges {
-                            node {
-                                name
-                            }
-                            size
-                        }
-                    }
+#                    languages(first: 5) {
+#                        totalSize
+#                        edges {
+#                            node {
+#                                name
+#                            }
+#                            size
+#                        }
+#                    }
                 }
             }
         }
