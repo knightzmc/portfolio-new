@@ -22,7 +22,6 @@ Vue.use(vueSmoothScroll);
 Vue.use(VueAnalytics, {
     id: 'UA-100011338-2'
 });
-Vue.use(Meta);
 
 
 new Vue({
