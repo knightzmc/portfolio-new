@@ -7,15 +7,13 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
 // @ts-ignore
 import vueSmoothScroll from 'vue2-smooth-scroll';
-
 // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
 // @ts-ignore
 import {createProvider} from './vue-apollo'
 
 import VueAnalytics from 'vue-analytics';
 import router from './router'
-import Meta from 'vue-meta';
-import {VueRouter} from "vue-router/types/router";
+
 Vue.config.productionTip = false;
 
 Vue.use(BootstrapVue);
