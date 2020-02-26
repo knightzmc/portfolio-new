@@ -1,5 +1,5 @@
 <template>
-    <div id="main" class="text-center">
+    <div class="text-center" id="main">
         <HelloWorld msg="Alexander Wood"/>
         <Separator color="#324A5F"></Separator>
         <AboutMe></AboutMe>
@@ -12,13 +12,14 @@
 
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
-    import HelloWorld from './components/HelloWorld.vue';
+    import HelloWorld from './components/Hello.vue';
     import Separator from "@/components/Separator.vue";
     import AboutMe from "@/components/AboutMe.vue";
     import Projects from "@/components/Projects.vue";
     import Contact from "@/components/Contact.vue";
 
     const importantComponents: Array<HTMLElement> = [];
+
     @Component({
         components: {
             Contact,
@@ -29,7 +30,6 @@
     export default class App extends Vue {
         constructor() {
             super();
-
             Vue.directive('important', {
                 bind: function (el) {
                     importantComponents.push(el);

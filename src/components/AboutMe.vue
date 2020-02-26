@@ -4,7 +4,7 @@
             <div class="col-5 text-left">
                 <h1 class="display-3">Hey</h1>
                 <p>
-                    My name is Alex Wood, but online I often go by the name
+                    My name is Alex Wood and I'm 16 years old and from the UK, but online I often go by the name
                     <a href="#" v-b-tooltip.hover title="It's an inside joke!">BristerMitten</a> online.
                     I developed an interest in Minecraft a few years later when I was 11. I started a modest server,
                     but decided I would learn how to make plugins in order to make it stand out.

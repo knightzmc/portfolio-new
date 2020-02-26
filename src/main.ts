@@ -14,7 +14,8 @@ import {createProvider} from './vue-apollo'
 
 import VueAnalytics from 'vue-analytics';
 import router from './router'
-
+import Meta from 'vue-meta';
+import {VueRouter} from "vue-router/types/router";
 Vue.config.productionTip = false;
 
 Vue.use(BootstrapVue);
@@ -23,6 +24,8 @@ Vue.use(vueSmoothScroll);
 Vue.use(VueAnalytics, {
     id: 'UA-100011338-2'
 });
+Vue.use(Meta);
+
 
 new Vue({
     // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
