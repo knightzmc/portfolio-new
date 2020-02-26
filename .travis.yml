@@ -1,3 +1,4 @@
+dist: trusty
 language: node_js
 node_js:
   - "node"
@@ -8,7 +9,7 @@ script: npm run build
 
 deploy:
   provider: pages
-  skip_cleanup: true
+  skip_cleanup: false
   github_token: $GITHUB_TOKEN
   local_dir: dist
   on:
