@@ -41,7 +41,7 @@ const defaultOptions = {
 
   // Override the way the Authorization header is set
   getAuth: () => {
-    return 'Bearer 83b2c98b73ae85e20be2f97036ce7d5faba9be65'
+    return 'Bearer f76270ef84d494b606b50e63f10f109c819bc3b5'
   }
 
   // Additional ApolloClient options
