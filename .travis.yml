@@ -5,7 +5,9 @@ node_js:
 
 cache: npm
 
-script: npm run build
+script:
+  - npm run build
+  - echo bristermitten.me > CNAME
 
 deploy:
   provider: pages
