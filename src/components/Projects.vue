@@ -93,4 +93,8 @@
          */
     }
 
+    div .card-text {
+        text-transform: none;
+    }
+
 </style>
