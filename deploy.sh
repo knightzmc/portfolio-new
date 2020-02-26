@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 
+echo "YO"
 # abort on errors
 set -e
 
