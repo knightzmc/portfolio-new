@@ -7,7 +7,7 @@ cache: npm
 
 script:
   - npm run build
-  - echo bristermitten.me > CNAME
+  - echo bristermitten.me > dist/CNAME
 
 deploy:
   provider: pages
